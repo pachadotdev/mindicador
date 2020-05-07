@@ -10,15 +10,19 @@ test_that("importar_datos returns valid tables with a valid input", {
     # default parameters
     test_data <- mindicador_importar_datos()
     expect_is(test_data, "data.frame")
-    expect_equal(ncol(test_data), 2)
+    expect_equal(ncol(test_data), 3)
 
     # using cache
     test_data_2 <- mindicador_importar_datos(usar_cache = T)
     expect_is(test_data_2, "data.frame")
-    expect_equal(ncol(test_data_2), 2)
+    expect_equal(ncol(test_data_2), 3)
 
     test_data_3 <- mindicador_importar_datos(usar_cache = T, archivo = tempfile())
     expect_is(test_data_3, "data.frame")
-    expect_equal(ncol(test_data_3), 2)
+    expect_equal(ncol(test_data_3), 3)
+
+    # using xts
+    test_data_4 <- mindicador_importar_datos(tipo = "xts")
+    expect_s3_class(test_data_4, "xts")
   })
 })

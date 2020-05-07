@@ -1,6 +1,8 @@
 # mindicador
 
 <!-- badges: start -->
+[![R build status](https://github.com/pachamaltese/mindicador/workflows/R-CMD-check/badge.svg)](https://github.com/pachamaltese/mindicador/actions)
+[![Codecov test coverage](https://codecov.io/gh/pachamaltese/mindicador/branch/master/graph/badge.svg)](https://codecov.io/gh/pachamaltese/mindicador?branch=master)
 <!-- badges: end -->
 
 El objetivo de `mindicador::` es facilitar el uso de los datos de mindicador.cl el cual es un proyecto de terceros.
@@ -15,16 +17,18 @@ devtools::install_github("pachamaltese/mindicador")
 
 ## Uso
 
+Todas las series se importan de igual modo.
 ```r
 # series disponibles
-indicadores
+mindicador_indicadores
 
 # valores de la UF anio 2020
 mindicador_importar_datos("uf", 2020)
+
+# valores de la UF anios 2010 a 2020
+mindicador_importar_datos("uf", 2010:2020)
 ```
 
 ## Código de Conducta
   
-El objetivo de este proyecto es generar recursos para la comunidad científica y público en general a través de una dinámica de trabajo colaborativa. Se espera que las personas puedan participar libremente, compartiendo ideas, haciendo sugerencias, proponiendo cambios, analizando puntos de vista, etc., en un ambiente de respeto y colaboración. Asimismo, se espera que quienes participen hagan críticas justas, constructivas y propositivas, no juicios de valor._
-
-_En todo momento se cautelará que la discusión sea un ambiente libre de acoso y hostigamiento, independiente del sexo, identidad, género, edad, orientación sexual, discapacidad, apariencia física, tamaño corporal, raza, etnia, religión (o la falta de ella), ideología, nacionalidad, variante lingüística u opciones tecnológicas. No se tolerará el acoso ni el hostigamiento en ninguna de sus formas. Quienes incurran en este tipo de conductas serán marginados del proceso de trabajo de forma permanente. El lenguaje sexual y las imágenes de ese tipo no son apropiados en ningún espacio de este proyecto._
+Este proyecto contempla un [Código de Conducta](https://github.com/pachamaltese/blob/master/CODE_OF_CONDUCT.md).

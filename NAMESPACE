@@ -2,6 +2,7 @@
 
 export(mindicador_importar_datos)
 importFrom(crul,HttpClient)
+importFrom(data.table,dcast)
 importFrom(data.table,fread)
 importFrom(data.table,fwrite)
 importFrom(data.table,rbindlist)
@@ -9,3 +10,4 @@ importFrom(digest,digest)
 importFrom(jsonlite,fromJSON)
 importFrom(memoise,forget)
 importFrom(memoise,memoise)
+importFrom(xts,xts)

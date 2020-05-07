@@ -1,6 +1,8 @@
 library(usethis)
+library(tibble)
 library(purrr)
 library(jsonlite)
+library(data.table)
 
 use_directory("data-raw", ignore = T)
 
@@ -11,7 +13,7 @@ indicadores <- indicadores[!names(indicadores) %in% c("version", "autor", "fecha
 
 codigos <- names(indicadores)
 
-indicadores <- map_df(
+mindicador_indicadores <- map_df(
   seq_len(length(indicadores)),
   function(j) {
     d <- indicadores[codigos[j]]
@@ -25,4 +27,8 @@ indicadores <- map_df(
   }
 )
 
-use_data(indicadores)
+mindicador_indicadores <- as.data.table(mindicador_indicadores)
+# sacado de tabla html en home de mindicador.cl
+mindicador_indicadores$desde <- c(1977,1990,1984,1988,1999,1928,1990,1997,2001,2012,2009,2009)
+
+use_data(mindicador_indicadores)

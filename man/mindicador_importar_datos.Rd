@@ -14,11 +14,11 @@ mindicador_importar_datos(
 )
 }
 \arguments{
-\item{series}{Cualquiera de los codigos de \code{mindicador::indicadores}}
+\item{series}{Cualquiera de los codigos de \code{mindicador::mindicador_indicadores}}
 
-\item{anios}{foo bar}
+\item{anios}{Anios validos para las distintas series (ver \code{mindicador::mindicador_indicadores})}
 
-\item{tipo}{Por ahora solo "data.frame"}
+\item{tipo}{data.frame o xts}
 
 \item{max_intentos}{Por defecto son cinco}
 
@@ -33,7 +33,7 @@ para facilitar el uso de estos datos con distintas funciones de R
 }
 \examples{
 \dontrun{
-# foo bar
+mindicador_importar_datos("uf", 2020)
 }
 }
 \keyword{functions}
