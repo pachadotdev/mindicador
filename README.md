@@ -5,7 +5,7 @@
 [![Codecov test coverage](https://codecov.io/gh/pachamaltese/mindicador/branch/master/graph/badge.svg)](https://codecov.io/gh/pachamaltese/mindicador?branch=master)
 <!-- badges: end -->
 
-El objetivo de `mindicador::` es facilitar el uso de los datos de mindicador.cl el cual es un proyecto de terceros.
+El objetivo de `mindicador::` es facilitar el uso de los datos de mindicador.cl el cual es un proyecto de independiente de este software y que fue desarrollado por [Christopher Riquelme](https://twitter.com/lee_om).
 
 ## Instalación
 
@@ -31,4 +31,4 @@ mindicador_importar_datos("uf", 2010:2020)
 
 ## Código de Conducta
   
-Este proyecto contempla un [Código de Conducta](https://github.com/pachamaltese/blob/master/CODE_OF_CONDUCT.md).
+Este proyecto contempla un [Código de Conducta](https://github.com/pachamaltese/mindicador/blob/master/CODE_OF_CONDUCT.md).

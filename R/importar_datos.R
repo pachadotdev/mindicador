@@ -1,7 +1,7 @@
 #' @importFrom jsonlite fromJSON
 #' @importFrom crul HttpClient
 #' @keywords internal
-mindicador_importar_datos_interna <- function(serie = "uf", anio = 2020, tipo = "data.frame", max_intentos = 5) {
+mindicador_importar_datos_interna <- function(serie, anio, tipo, max_intentos) {
   stopifnot(max_intentos > 0)
 
   anio_inicio <- switch(serie,
@@ -43,7 +43,7 @@ mindicador_importar_datos_interna <- function(serie = "uf", anio = 2020, tipo = 
 
 #' @importFrom data.table rbindlist
 #' @keywords internal
-mindicador_importar_datos_unmemoised <- function(series = "uf", anios = 2020, tipo = "data.frame", max_intentos = 5) {
+mindicador_importar_datos_unmemoised <- function(series, anios, tipo, max_intentos) {
   condensed_parameters <- expand.grid(
     serie = series,
     anio = anios,
