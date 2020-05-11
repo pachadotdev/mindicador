@@ -1,0 +1,55 @@
+---
+title: "mindicador"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{mindicador}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+# Caso de uso
+
+Esta vinieta pretende explicar como usar mindicador en una situacion real. Partire intentando ponerme en los zapatos de una periodista que esta escribiendo un reportaje sobre la evolucion de la economia chilena en el periodo 2010-2020. Para esto seria de interes graficar la evolucion del IMACEC (Indice de Medicion de la Actividad Economica) y del desempleo y posiblemente exportar los datos a excel.
+
+## Importar datos
+
+Es posible obtener ambos indicadores mediante un unico comando:
+```{r}
+library(mindicador)
+library(ggplot2)
+library(readxl)
+
+# veo los codigos de ambos indicadores
+mindicador_indicadores
+
+# obtengo los datos
+datos <- mindicador_importar_datos(c("imacec", "tasa_desempleo"), 2010:2020)
+
+# veo los datos
+datos
+```
+
+## Graficar las series
+
+Simplemente para explorar que tengo lo que necesito:
+```{r}
+# las dos series estan en la misma escala (porcentaje) asi que los puedo dejar en un mismo grafico
+ggplot(data = datos, aes(x = fecha, y = valor, color = serie)) +
+  geom_line() +
+  theme(legend.position = "bottom") +
+  labs(title = "Evolucion IMACEC y Desempleo 2010-2020", x = "Fecha", y = "Porcentaje")
+```
+
+## Exportar a Excel
+
+Si el grafico anterior es indicativo de lo que necesito, posiblemente es conveniente exportar los datos a Excel. Se puede hacer del siguiente modo:
+```{r, eval = FALSE}
+write_xlsx(datos, "serie_imacec_desempleo_2010_2020.xlsx")
+```

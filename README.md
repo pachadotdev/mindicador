@@ -18,7 +18,7 @@ devtools::install_github("pachamaltese/mindicador")
 
 ## Uso
 
-Todas las series se importan de igual modo.
+Todas las series se importan de igual modo:
 ```r
 # series disponibles
 mindicador_indicadores
@@ -29,6 +29,8 @@ mindicador_importar_datos("uf", 2020)
 # valores de la UF anios 2010 a 2020
 mindicador_importar_datos("uf", 2010:2020)
 ```
+
+Puedes consultar pacha.dev/mindicador para ver un ejemplo más extenso.
 
 ## Código de Conducta
   
