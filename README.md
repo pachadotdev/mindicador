@@ -30,7 +30,7 @@ mindicador_importar_datos("uf", 2020)
 mindicador_importar_datos("uf", 2010:2020)
 ```
 
-Puedes consultar pacha.dev/mindicador para ver un ejemplo más extenso.
+Puedes consultar https://pacha.dev/mindicador para ver un ejemplo más extenso.
 
 ## Código de Conducta
   
