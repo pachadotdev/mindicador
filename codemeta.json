@@ -6,7 +6,7 @@
   "@type": "SoftwareSourceCode",
   "identifier": "mindicador",
   "description": "Importa los datos de la API de mindicador.cl como cuadro de datos o serie de tiempo,\n    facilitando su uso con distintos paquetes de R y su exportacion a Excel/Libre Office.",
-  "name": "mindicador: Obtiene indicadores economicos de mindicador.cl (Obtains economic outlook from mindicador.cl)",
+  "name": "mindicador: Obtiene Indicadores Economicos De Mindicador.cl (Obtains Economic Outlook from Mindicador.cl)",
   "license": "https://spdx.org/licenses/GPL-3.0",
   "version": "0.1",
   "programmingLanguage": {
@@ -213,7 +213,7 @@
   ],
   "codeRepository": "https://github.com/pachamaltese/mindicador",
   "readme": "https://github.com/pachamaltese/mindicador/blob/master/README.md",
-  "fileSize": "5.878KB",
+  "fileSize": "5.896KB",
   "contIntegration": "https://codecov.io/gh/pachamaltese/mindicador?branch=master",
   "issueTracker": "https://github.com/pachamaltese/mindicador/issues",
   "developmentStatus": "https://www.repostatus.org/#wip",

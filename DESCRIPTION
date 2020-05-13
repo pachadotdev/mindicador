@@ -1,5 +1,5 @@
 Package: mindicador
-Title: Obtiene indicadores economicos de mindicador.cl (Obtains economic outlook from mindicador.cl)
+Title: Obtiene Indicadores Economicos De Mindicador.cl (Obtains Economic Outlook from Mindicador.cl)
 Version: 0.1
 Authors@R: 
     person(given = "Mauricio",
