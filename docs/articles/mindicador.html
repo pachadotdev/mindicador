@@ -31,7 +31,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">mindicador</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.0.9000</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1</span>
       </span>
     </div>
 
@@ -86,11 +86,11 @@
 <div id="caso-de-uso" class="section level1">
 <h1 class="hasAnchor">
 <a href="#caso-de-uso" class="anchor"></a>Caso de uso</h1>
-<p>Esta vinieta pretende explicar como usar mindicador en una situacion real. Partire intentando ponerme en los zapatos de una periodista que esta escribiendo un reportaje sobre la evolucion de la economia chilena en el periodo 2010-2020. Para esto seria de interes graficar la evolucion del IMACEC (Indice de Medicion de la Actividad Economica) y del desempleo y posiblemente exportar los datos a excel.</p>
+<p>Esta vinieta pretende explicar como usar mindicador en una situacion real. Partire intentando ponerme en los zapatos de una periodista que esta escribiendo un reportaje sobre la evolucion de la economia chilena en el periodo 2010-2020. Me centrate en el IMACEC (Indice de Medicion de la Actividad Economica) y el desempleo.</p>
 <div id="importar-datos" class="section level2">
 <h2 class="hasAnchor">
 <a href="#importar-datos" class="anchor"></a>Importar datos</h2>
-<p>Es posible obtener ambos indicadores mediante un unico comando:</p>
+<p>Es posible obtener ambos indicadores de manera directa:</p>
 <div class="sourceCode" id="cb1"><html><body><pre class="r"><span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">mindicador</span>)
 <span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">ggplot2</span>)
 <span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">readxl</span>)
@@ -132,7 +132,7 @@
 <div id="graficar-las-series" class="section level2">
 <h2 class="hasAnchor">
 <a href="#graficar-las-series" class="anchor"></a>Graficar las series</h2>
-<p>Simplemente para explorar que tengo lo que necesito:</p>
+<p>Simplemente para explorar visualmente lo obtenido:</p>
 <div class="sourceCode" id="cb2"><html><body><pre class="r"><span class="co"># las dos series estan en la misma escala (porcentaje) asi que los puedo dejar en un mismo grafico</span>
 <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span>(<span class="kw">data</span> <span class="kw">=</span> <span class="no">datos</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(<span class="kw">x</span> <span class="kw">=</span> <span class="no">fecha</span>, <span class="kw">y</span> <span class="kw">=</span> <span class="no">valor</span>, <span class="kw">color</span> <span class="kw">=</span> <span class="no">serie</span>)) +
   <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_path.html">geom_line</a></span>() +
@@ -143,7 +143,7 @@
 <div id="exportar-a-excel" class="section level2">
 <h2 class="hasAnchor">
 <a href="#exportar-a-excel" class="anchor"></a>Exportar a Excel</h2>
-<p>Si el grafico anterior es indicativo de lo que necesito, posiblemente es conveniente exportar los datos a Excel. Se puede hacer del siguiente modo:</p>
+<p>Posiblemente sea conveniente exportar los datos a Excel. Se puede hacer del siguiente modo:</p>
 <div class="sourceCode" id="cb3"><html><body><pre class="r"><span class="fu">write_xlsx</span>(<span class="no">datos</span>, <span class="st">"serie_imacec_desempleo_2010_2020.xlsx"</span>)</pre></body></html></div>
 </div>
 </div>

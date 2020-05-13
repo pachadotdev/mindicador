@@ -16,11 +16,11 @@ knitr::opts_chunk$set(
 
 # Caso de uso
 
-Esta vinieta pretende explicar como usar mindicador en una situacion real. Partire intentando ponerme en los zapatos de una periodista que esta escribiendo un reportaje sobre la evolucion de la economia chilena en el periodo 2010-2020. Para esto seria de interes graficar la evolucion del IMACEC (Indice de Medicion de la Actividad Economica) y del desempleo y posiblemente exportar los datos a excel.
+Esta vinieta pretende explicar como usar mindicador en una situacion real. Partire intentando ponerme en los zapatos de una periodista que esta escribiendo un reportaje sobre la evolucion de la economia chilena en el periodo 2010-2020. Me centrate en el IMACEC (Indice de Medicion de la Actividad Economica) y el desempleo.
 
 ## Importar datos
 
-Es posible obtener ambos indicadores mediante un unico comando:
+Es posible obtener ambos indicadores de manera directa:
 ```{r}
 library(mindicador)
 library(ggplot2)
@@ -38,7 +38,7 @@ datos
 
 ## Graficar las series
 
-Simplemente para explorar que tengo lo que necesito:
+Simplemente para explorar visualmente lo obtenido:
 ```{r}
 # las dos series estan en la misma escala (porcentaje) asi que los puedo dejar en un mismo grafico
 ggplot(data = datos, aes(x = fecha, y = valor, color = serie)) +
@@ -49,7 +49,7 @@ ggplot(data = datos, aes(x = fecha, y = valor, color = serie)) +
 
 ## Exportar a Excel
 
-Si el grafico anterior es indicativo de lo que necesito, posiblemente es conveniente exportar los datos a Excel. Se puede hacer del siguiente modo:
+Posiblemente sea conveniente exportar los datos a Excel. Se puede hacer del siguiente modo:
 ```{r, eval = FALSE}
 write_xlsx(datos, "serie_imacec_desempleo_2010_2020.xlsx")
 ```
