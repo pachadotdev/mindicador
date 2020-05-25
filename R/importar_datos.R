@@ -80,6 +80,7 @@ mindicador_importar_datos_memoised <- memoise::memoise(mindicador_importar_datos
 #' Obtiene datos de mindicador.cl
 #' @description Se conecta a la API y realiza algunas transformaciones al input en formato JSON
 #' para facilitar el uso de estos datos con distintas funciones de R
+#' @return un objeto data.frame o xts con los datos solicitados por el usuario
 #' @param series Cualquiera de los codigos de \code{mindicador::mindicador_indicadores}
 #' @param anios Anios validos para las distintas series (ver \code{mindicador::mindicador_indicadores})
 #' @param tipo data.frame o xts
@@ -90,12 +91,10 @@ mindicador_importar_datos_memoised <- memoise::memoise(mindicador_importar_datos
 #' @importFrom xts xts
 #' @param archivo Ruta del archivo para leer y escribir la cache.
 #' @examples
-#' \dontrun{
 #' mindicador_importar_datos("uf", 2020)
-#' }
 #' @keywords functions
 #' @export
-mindicador_importar_datos <- function(series = "uf", anios = 2020, tipo = "data.frame", max_intentos = 5, usar_cache = F, archivo = NULL) {
+mindicador_importar_datos <- function(series = "uf", anios = 2020, tipo = "data.frame", max_intentos = 5, usar_cache = FALSE, archivo = NULL) {
   stopifnot(all(is.character(series)))
   stopifnot(all(series %in% mindicador::mindicador_indicadores$codigo))
   stopifnot(all(is.numeric(anios)))

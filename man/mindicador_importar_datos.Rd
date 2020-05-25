@@ -9,7 +9,7 @@ mindicador_importar_datos(
   anios = 2020,
   tipo = "data.frame",
   max_intentos = 5,
-  usar_cache = F,
+  usar_cache = FALSE,
   archivo = NULL
 )
 }
@@ -27,13 +27,14 @@ memoria si \code{archivo} es \code{NULL} o en disco si \code{archivo} es una cad
 
 \item{archivo}{Ruta del archivo para leer y escribir la cache.}
 }
+\value{
+un objeto data.frame o xts con los datos solicitados por el usuario
+}
 \description{
 Se conecta a la API y realiza algunas transformaciones al input en formato JSON
 para facilitar el uso de estos datos con distintas funciones de R
 }
 \examples{
-\dontrun{
 mindicador_importar_datos("uf", 2020)
-}
 }
 \keyword{functions}

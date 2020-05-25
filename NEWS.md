@@ -1,3 +1,12 @@
+# mindicador 0.1.5
+
+Changes requested by Dr. Jelena Saf from CRAN
+* Uses TRUE/FALSE instead of T/F in arguments
+* Added english description
+* Removed donttest from examples
+* Added \value to .Rd
+* Long DESCRIPTION field
+
 # mindicador 0.1
 
 * Improved documentation.

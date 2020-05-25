@@ -73,7 +73,7 @@ para facilitar el uso de estos datos con distintas funciones de R" />
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">mindicador</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.5</span>
       </span>
     </div>
 
@@ -130,7 +130,7 @@ para facilitar el uso de estos datos con distintas funciones de R</p>
   <span class='kw'>anios</span> <span class='kw'>=</span> <span class='fl'>2020</span>,
   <span class='kw'>tipo</span> <span class='kw'>=</span> <span class='st'>"data.frame"</span>,
   <span class='kw'>max_intentos</span> <span class='kw'>=</span> <span class='fl'>5</span>,
-  <span class='kw'>usar_cache</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>usar_cache</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>,
   <span class='kw'>archivo</span> <span class='kw'>=</span> <span class='kw'>NULL</span>
 )</pre>
 
@@ -164,11 +164,23 @@ memoria si <code>archivo</code> es <code>NULL</code> o en disco si <code>archivo
     </tr>
     </table>
 
+    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
+
+    <p>un objeto data.frame o xts con los datos solicitados por el usuario</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='kw'>if</span> (<span class='fl'>FALSE</span>) {
-<span class='fu'>mindicador_importar_datos</span>(<span class='st'>"uf"</span>, <span class='fl'>2020</span>)
-}</div></pre>
+    <pre class="examples"><div class='input'><span class='fu'>mindicador_importar_datos</span>(<span class='st'>"uf"</span>, <span class='fl'>2020</span>)</div><div class='output co'>#&gt;      serie      fecha    valor
+#&gt;   1:    uf 2020-06-09 28716.52
+#&gt;   2:    uf 2020-06-08 28716.52
+#&gt;   3:    uf 2020-06-07 28716.52
+#&gt;   4:    uf 2020-06-06 28716.52
+#&gt;   5:    uf 2020-06-05 28716.52
+#&gt;  ---                          
+#&gt; 157:    uf 2020-01-05 28314.51
+#&gt; 158:    uf 2020-01-04 28313.60
+#&gt; 159:    uf 2020-01-03 28312.68
+#&gt; 160:    uf 2020-01-02 28311.77
+#&gt; 161:    uf 2020-01-01 28310.86</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">

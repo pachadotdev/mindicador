@@ -1,14 +1,18 @@
 Package: mindicador
-Title: Obtiene Indicadores Economicos De Mindicador.cl (Obtains Economic Outlook from Mindicador.cl)
-Version: 0.1
+Title: Indicadores Economicos de Chile (Economic Outlook for Chile)
+Version: 0.1.5
 Authors@R: 
     person(given = "Mauricio",
            family = "Vargas",
            role = c("aut", "cre", "cph"),
            email = "mvargas@dcc.uchile.cl",
            comment = c(ORCID = "0000-0003-1017-7574"))
-Description: Importa los datos de la API de mindicador.cl como cuadro de datos o serie de tiempo,
-    facilitando su uso con distintos paquetes de R y su exportacion a Excel/Libre Office.
+Description: Importa datos de la API de https://mindicador.cl en formato de cuadro de datos o serie de tiempo.
+    El objetivo es facilitar el uso de algunos datos economicos a periodistas y profesionales que requieren
+    informacion desplegada de forma clara y concisa.
+    (Imports data from https://mindicador.cl API in data frame or time series format. The goal
+    is to ease using certain economic data with different R packages, having in mind journalists and professionals
+    that require information displayed in a clear and concise way.)
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
