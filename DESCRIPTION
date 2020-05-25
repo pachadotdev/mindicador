@@ -7,10 +7,10 @@ Authors@R:
            role = c("aut", "cre", "cph"),
            email = "mvargas@dcc.uchile.cl",
            comment = c(ORCID = "0000-0003-1017-7574"))
-Description: Importa datos de la API de https://mindicador.cl en formato de cuadro de datos o serie de tiempo.
+Description: Importa datos de la API de <https://mindicador.cl> en formato de cuadro de datos o serie de tiempo.
     El objetivo es facilitar el uso de algunos datos economicos a periodistas y profesionales que requieren
     informacion desplegada de forma clara y concisa.
-    (Imports data from https://mindicador.cl API in data frame or time series format. The goal
+    (Imports data from <https://mindicador.cl> API in data frame or time series format. The goal
     is to ease using certain economic data with different R packages, having in mind journalists and professionals
     that require information displayed in a clear and concise way.)
 License: GPL-3
