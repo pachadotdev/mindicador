@@ -213,9 +213,22 @@
   ],
   "codeRepository": "https://github.com/pachamaltese/mindicador",
   "readme": "https://github.com/pachamaltese/mindicador/blob/master/README.md",
-  "fileSize": "6.121KB",
+  "fileSize": "6.155KB",
   "contIntegration": "https://codecov.io/gh/pachamaltese/mindicador?branch=master",
   "issueTracker": "https://github.com/pachamaltese/mindicador/issues",
   "developmentStatus": "https://www.repostatus.org/#wip",
-  "releaseNotes": "https://github.com/pachamaltese/mindicador/blob/master/NEWS.md"
+  "releaseNotes": "https://github.com/pachamaltese/mindicador/blob/master/NEWS.md",
+  "provider": {
+    "@id": "https://cran.r-project.org",
+    "@type": "Organization",
+    "name": "Comprehensive R Archive Network (CRAN)",
+    "url": "https://cran.r-project.org"
+  },
+  "keywords": [
+    "r",
+    "economic-data",
+    "api-wrapper",
+    "chile"
+  ],
+  "relatedLink": "https://CRAN.R-project.org/package=mindicador"
 }
