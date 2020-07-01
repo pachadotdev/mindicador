@@ -69,6 +69,7 @@ mindicador_importar_datos_unmemoised <- function(series, anios, tipo, max_intent
   )
 
   data <- rbindlist(data, fill = TRUE)
+  data <- unique(data)
 
   return(data)
 }
