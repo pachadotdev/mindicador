@@ -70,6 +70,8 @@ mindicador_importar_datos_unmemoised <- function(series, anios, tipo, max_intent
 
   data <- rbindlist(data, fill = TRUE)
   data <- unique(data)
+  data <- as.data.frame(data)
+  data <- data[order(data$fecha), ]
 
   return(data)
 }
@@ -88,7 +90,7 @@ mindicador_importar_datos_memoised <- memoise::memoise(mindicador_importar_datos
 #' @param max_intentos Por defecto son cinco
 #' @param usar_cache Valor logico para leer y escribir en cache. Si es \code{TRUE}, los resultados quedan cacheados en
 #' memoria si \code{archivo} es \code{NULL} o en disco si `archivo` es una cadena de texto.
-#' @importFrom data.table dcast
+#' @importFrom data.table dcast as.data.table
 #' @importFrom xts xts
 #' @param archivo Ruta del archivo para leer y escribir la cache.
 #' @examples
@@ -112,7 +114,7 @@ mindicador_importar_datos <- function(series = "uf", anios = 2020, tipo = "data.
   )
 
   if (tipo == "xts") {
-    data <- dcast(data, fecha ~ serie, value.var = "valor")
+    data <- dcast(as.data.table(data), fecha ~ serie, value.var = "valor")
     data <- xts(data[ , -"fecha"], order.by = data$fecha)
   }
 

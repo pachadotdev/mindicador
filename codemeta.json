@@ -8,14 +8,14 @@
   "description": "Importa datos de la API de <https://mindicador.cl> en formato de cuadro de datos o serie de tiempo.\n    El objetivo es facilitar el uso de algunos datos economicos a periodistas y profesionales que requieren\n    informacion desplegada de forma clara y concisa.\n    (Imports data from <https://mindicador.cl> API in data frame or time series format. The goal\n    is to ease using certain economic data with different R packages, having in mind journalists and professionals\n    that require information displayed in a clear and concise way.)",
   "name": "mindicador: Indicadores Economicos de Chile (Economic Outlook for Chile)",
   "license": "https://spdx.org/licenses/GPL-3.0",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
-    "version": "3.6.3",
+    "version": "3.6.1",
     "url": "https://r-project.org"
   },
-  "runtimePlatform": "R version 3.6.3 (2020-02-29)",
+  "runtimePlatform": "R version 3.6.1 (2019-07-05)",
   "author": [
     {
       "@type": "Person",
@@ -213,7 +213,7 @@
   ],
   "codeRepository": "https://github.com/pachamaltese/mindicador",
   "readme": "https://github.com/pachamaltese/mindicador/blob/master/README.md",
-  "fileSize": "6.143KB",
+  "fileSize": "6.253KB",
   "contIntegration": "https://codecov.io/gh/pachamaltese/mindicador?branch=master",
   "issueTracker": "https://github.com/pachamaltese/mindicador/issues",
   "developmentStatus": "https://www.repostatus.org/#wip",

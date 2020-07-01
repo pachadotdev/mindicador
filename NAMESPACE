@@ -2,6 +2,7 @@
 
 export(mindicador_importar_datos)
 importFrom(crul,HttpClient)
+importFrom(data.table,as.data.table)
 importFrom(data.table,dcast)
 importFrom(data.table,fread)
 importFrom(data.table,fwrite)

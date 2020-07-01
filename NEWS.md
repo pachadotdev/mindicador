@@ -1,3 +1,8 @@
+# mindicador 0.1.6
+
+* Datasets in ASCII
+* Returns data.frame as default
+
 # mindicador 0.1.5
 
 Changes requested by Dr. Jelena Saf and Dr. Uwe Ligges from CRAN
