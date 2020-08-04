@@ -12,10 +12,10 @@
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
-    "version": "3.6.1",
+    "version": "3.6.3",
     "url": "https://r-project.org"
   },
-  "runtimePlatform": "R version 3.6.1 (2019-07-05)",
+  "runtimePlatform": "R version 3.6.3 (2020-02-29)",
   "author": [
     {
       "@type": "Person",
@@ -213,7 +213,7 @@
   ],
   "codeRepository": "https://github.com/pachamaltese/mindicador",
   "readme": "https://github.com/pachamaltese/mindicador/blob/master/README.md",
-  "fileSize": "6.253KB",
+  "fileSize": "6.266KB",
   "contIntegration": "https://codecov.io/gh/pachamaltese/mindicador?branch=master",
   "issueTracker": "https://github.com/pachamaltese/mindicador/issues",
   "developmentStatus": "https://www.repostatus.org/#wip",

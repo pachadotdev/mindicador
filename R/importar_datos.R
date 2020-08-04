@@ -71,7 +71,7 @@ mindicador_importar_datos_unmemoised <- function(series, anios, tipo, max_intent
   data <- rbindlist(data, fill = TRUE)
   data <- unique(data)
   data <- as.data.frame(data)
-  data <- data[order(data$fecha), ]
+  data <- data[order(data$fecha, decreasing = TRUE), ]
 
   return(data)
 }

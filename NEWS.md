@@ -1,3 +1,7 @@
+# mindicador 0.1.7
+
+* Sorts dates in decreasing order (see https://github.com/pachamaltese/mindicador/issues/2)
+
 # mindicador 0.1.6
 
 * Datasets in ASCII
