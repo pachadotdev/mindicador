@@ -1,6 +1,6 @@
 Package: mindicador
 Title: Indicadores Economicos de Chile (Economic Outlook for Chile)
-Version: 0.1.7
+Version: 0.1.8
 Authors@R: 
     person(given = "Mauricio",
            family = "Vargas",

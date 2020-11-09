@@ -1,10 +1,14 @@
+# mindicador 0.1.8
+
+* Adds error message when there is no data for the requested period (https://github.com/pachamaltese/mindicador/issues/3)
+
 # mindicador 0.1.7
 
 * Sorts dates in decreasing order (see https://github.com/pachamaltese/mindicador/issues/2)
 
 # mindicador 0.1.6
 
-* Datasets in ASCII
+* Datasets in ASCIIhttps://github.com/pachamaltese/mindicador/issues/3
 * Returns data.frame as default
 
 # mindicador 0.1.5

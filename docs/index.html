@@ -36,7 +36,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">mindicador</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.7</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.8</span>
       </span>
     </div>
 
@@ -87,22 +87,25 @@
 <h2 class="hasAnchor">
 <a href="#instalaci%C3%B3n" class="anchor"></a>Instalación</h2>
 <p>Desde CRAN:</p>
-<div class="sourceCode" id="cb1"><pre class="r"><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span>(<span class="st">"mindicador"</span>)</pre></div>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span><span class="op">(</span><span class="st">"mindicador"</span><span class="op">)</span></code></pre></div>
 <p>Desde GitHub:</p>
-<div class="sourceCode" id="cb2"><pre class="r"><span class="kw pkg">devtools</span><span class="kw ns">::</span><span class="fu"><a href="https://devtools.r-lib.org//reference/remote-reexports.html">install_github</a></span>(<span class="st">"pachamaltese/mindicador"</span>)</pre></div>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://devtools.r-lib.org//reference/remote-reexports.html">install_github</a></span><span class="op">(</span><span class="st">"pachamaltese/mindicador"</span><span class="op">)</span></code></pre></div>
 </div>
 <div id="uso" class="section level2">
 <h2 class="hasAnchor">
 <a href="#uso" class="anchor"></a>Uso</h2>
 <p>Todas las series se importan de igual modo:</p>
-<div class="sourceCode" id="cb3"><pre class="r"><span class="co"># series disponibles</span>
-<span class="no">mindicador_indicadores</span>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="co"># series disponibles</span>
+<span class="va">mindicador_indicadores</span>
 
 <span class="co"># valores de la UF anio 2020</span>
-<span class="fu"><a href="reference/mindicador_importar_datos.html">mindicador_importar_datos</a></span>(<span class="st">"uf"</span>, <span class="fl">2020</span>)
+<span class="fu"><a href="reference/mindicador_importar_datos.html">mindicador_importar_datos</a></span><span class="op">(</span><span class="st">"uf"</span>, <span class="fl">2020</span><span class="op">)</span>
 
 <span class="co"># valores de la UF anios 2010 a 2020</span>
-<span class="fu"><a href="reference/mindicador_importar_datos.html">mindicador_importar_datos</a></span>(<span class="st">"uf"</span>, <span class="fl">2010</span>:<span class="fl">2020</span>)</pre></div>
+<span class="fu"><a href="reference/mindicador_importar_datos.html">mindicador_importar_datos</a></span><span class="op">(</span><span class="st">"uf"</span>, <span class="fl">2010</span><span class="op">:</span><span class="fl">2020</span><span class="op">)</span></code></pre></div>
 <p>Puedes consultar <a href="https://pacha.dev/mindicador" class="uri">https://pacha.dev/mindicador</a> para ver un ejemplo más extenso.</p>
 </div>
 <div id="código-de-conducta" class="section level2">
@@ -164,7 +167,7 @@
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
 
       </footer>

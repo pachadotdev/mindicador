@@ -30,6 +30,9 @@ mindicador_importar_datos_interna <- function(serie, anio, tipo, max_intentos) {
   # on a successful GET, return the response
   if (resp$status_code == 200) {
     data <- try(fromJSON(resp$parse(encoding = "UTF-8")))
+    if (is.null(nrow(data$serie))) {
+      stop("No hay datos para el periodo solicitado.")
+    }
     return(data$serie)
   } else if (max_intentos == 0) {
     # when attempts run out, stop with an error
